@@ -3,16 +3,21 @@ package com.noorteck.java.day19;
 public class Day19HomeworkFour {
 	public static void main(String[] args) {
 		Day19HomeworkFour obj = new Day19HomeworkFour();
-		obj.toLower("espn");
-		obj.toLower("SOCCER");
-		obj.toLower("STRING CLASS");
+		String resultOne= obj.toLower("espn");
+		String resultTwo= obj.toLower("SOCCER");
+		String resultThree=obj.toLower("STRING CLASS");
+		 System.out.println(resultOne);
+		 System.out.println(resultTwo);
+		 System.out.println(resultThree);
 
 	}
 
 	protected String toLower(String strOne) {
-
-		System.out.println(strOne.toLowerCase());
-		return strOne;
+		String result=" ";
+		
+		result=strOne.toLowerCase();
+		
+		return result;
 
 	}
 

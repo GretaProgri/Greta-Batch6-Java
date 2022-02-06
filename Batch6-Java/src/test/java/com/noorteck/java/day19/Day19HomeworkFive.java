@@ -3,31 +3,22 @@ package com.noorteck.java.day19;
 public class Day19HomeworkFive {
 
 	public static void main(String[] args) {
-		Day19HomeworkFive.combineStr("day", "ONE", "work", "Hours");
-		Day19HomeworkFive.combineStr("week", "weekend", "monday", "Tuesday");
-		Day19HomeworkFive.combineStr("restoN", "vA", "baltimore", "MD");
-		Day19HomeworkFive.combineStr("java", "is", "fun", "LEARNING");
+		String resultOne=combineStr("day","One","work","Hours");
+		System.out.println(resultOne);
 
 	}
 
 	protected static String combineStr(String strOne, String strTwo, String strThree, String strFour) {
 
 		String result = "";
-		System.out.println(strOne.toUpperCase());
+		
 
-		System.out.println(strThree.toUpperCase());
+		String newStr = strOne.toUpperCase()+strTwo.toLowerCase();
 
-		System.out.println(strTwo.toLowerCase());
+		String newStr2 = strThree.toUpperCase()+ strFour.toLowerCase();
+		result = newStr.concat(newStr2);
 
-		System.out.println(strFour.toLowerCase());
-
-		String newStr = strOne.concat(strTwo);
-
-		String newStr1 = strThree.concat(strFour);
-
-		String total = newStr.concat(newStr1);
-
-		System.out.println(total);
+	
 
 		return result;
 

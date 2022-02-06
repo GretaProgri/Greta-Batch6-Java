@@ -3,10 +3,14 @@ package com.noorteck.java.day19;
 public class Day19HomeworkNine {
 	public static void main(String[] args) {
 		Day19HomeworkNine obj = new Day19HomeworkNine ();
-		obj.isThere("java training", "ini");
-		obj.isThere("java training", "ava");
-		obj.isThere("java training", "AVA");
-		obj.isThere("java training", "Java");
+		boolean resultOne= obj.isThere("java training", "ini");
+		boolean resultTwo=obj.isThere("java training", "ava");
+		boolean resultThree=obj.isThere("java training", "AVA");
+		boolean resultFour=obj.isThere("java training", "Java");
+		System.out.println(resultOne);
+		System.out.println(resultTwo);
+		System.out.println(resultThree);
+		System.out.println(resultFour);
 		
 		
 		
@@ -14,9 +18,7 @@ public class Day19HomeworkNine {
 	private boolean isThere(String strOne, String value) {
 	boolean result=false;
 	if (strOne.contains(value)) {
-		System.out.println("True");
-	}else {
-		System.out.println("False");
+		result= true;
 	}
 
 	return result;

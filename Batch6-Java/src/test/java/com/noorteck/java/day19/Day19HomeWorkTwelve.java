@@ -3,14 +3,19 @@ package com.noorteck.java.day19;
 public class Day19HomeWorkTwelve {
 	public static void main(String[] args) {
 		
-	replaceStr("I cannot do it", "cannot", "can");
-	replaceStr("Tomorrow is my day", "Tomorrow", "Today");
+		replaceStr("I cannot do it", "cannot", "can");
+		 replaceStr("Tomorrow is my day", "Tomorrow", "Today");
 
-
+	//	System.out.println(resultOne);
 	
 	}
 	public static void replaceStr (String strOne, String oldStr, String newStr) {
+	
+		
+		strOne.replace(oldStr, newStr);
+		
 		System.out.println(strOne.replace(oldStr, newStr));
+	
 		
 		
 		

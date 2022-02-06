@@ -3,17 +3,21 @@ package com.noorteck.java.day19;
 public class Day19HomeworkOne {
 	
 	public static void main(String[] args) {
-	isEqual("sdet", "SDET");
-	isEqual("testing", "testing");
-	isEqual("java", "java");
-	isEqual("java", "java Programming");
+	boolean resultOne= isEqual("sdet", "SDET");
+	boolean resultTwo= isEqual("testing", "testing");
+	boolean resultThree=isEqual("java", "java");
+	boolean resultFour=isEqual("java", "java Programming");
 	
-	
+	System.out.println(resultOne);
+	System.out.println(resultTwo);
+	System.out.println(resultThree);
+	System.out.println(resultFour);
 	}
-	static boolean isEqual (String strOne, String strTwo) {
+	 static boolean isEqual (String strOne, String strTwo) {
 		boolean result=false;
 		if (strOne.equals(strTwo)) {
-			System.out.println("True");
+			result = true;
+			
 		
 		}
 		

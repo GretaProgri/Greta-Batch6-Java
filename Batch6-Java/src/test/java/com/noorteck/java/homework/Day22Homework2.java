@@ -1,10 +1,10 @@
-package com.noorteck.java.day19;
+package com.noorteck.java.homework;
 
-public class Day19HomeworkTen {
+public class Day22Homework2 {
 
 	public static void main(String[] args) {
 
-		Day19HomeworkTen obj = new Day19HomeworkTen();
+		Day22Homework2 obj = new Day22Homework2();
 		boolean resultOne = obj.isEndWith("java training", "ing");
 		boolean resultTwo = obj.isEndWith("java training", "ng");
 		boolean resultThree = obj.isEndWith("java training", "java");
@@ -27,28 +27,28 @@ public class Day19HomeworkTen {
 	boolean isEndWith(String strOne, String strTwo) {
 		boolean result = false;
 
-		if (strOne.endsWith(strTwo)) {
-			result = true;
+		if (strOne != null && strTwo != null) {
+			result = strOne.endsWith(strTwo);
 
-		} else {
-
-		 return result;
-
+		
 		}
 		return result;
 	}
 }
 
 /**
+ * 2. Write a method to check whether a given string ends with the
+ * contents(Characters) of another string Access Modifier: default Non-Access
+ * Modifier: non-static Return Type: boolean Method Name: isEndWith Parameter1:
+ * String strOne Parameter2: String strTwo Test Data: isEndWith (“java
+ * training”, “ing”) ----- TRUE isEndWith (“java training”, “ng”) ----- TRUE
+ * isEndWith (“java training”, “java”) ----- False isEndWith (“java training”,
+ * “train”) ----- False isEndWith (null , “java”) ----- False isEndWith (null ,
+ * null) ----- False isEndWith (“aaabc”, “abc”) ----- TRUE isEndWith (“abc”,
+ * null) ----- False
  * 
- * 10. Write a method to check whether a given string ends with the
- * contents(Characters) of another string
  * 
- * Access Modifier: default Non-Access Modifier: non-static Return Type: boolean
- * Method Name: isEndWith Parameter1: String strOne Parameter2: String strTwo
- * Test Data: isEndWith (“java training”, “ing”) ----- TRUE isEndWith (“java
- * training”, “ng”) ----- TRUE isEndWith (“java training”, “java”) ----- False
- * isEndWith (“java training”, “train”) ----- False
+ * 
  * 
  * 
  * 
